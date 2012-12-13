@@ -202,7 +202,7 @@ classdef mne_rt_data_client < mne_rt_client
                     elseif (tag.kind == FIFF.FIFF_NCHAN)
                         info.nchan = tag.data;
                     elseif (tag.kind == FIFF.FIFF_MEAS_DATE)
-                        info.highpass = tag.data;
+                        info.meas_date = tag.data;
                     end
                         
                     
